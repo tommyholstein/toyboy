@@ -5,7 +5,7 @@ key_jump = keyboard_check_pressed (vk_space);
 
 /// Calculate Movement
 var move = key_right - key_left;
-hsp = move * walksp;
+hsp = move*walksp;
 vsp = vsp + grv;
 
 ///Jump
@@ -39,9 +39,23 @@ y = y + vsp;
 
 /// Animation and Sprite Triggers
 	/// Jumping and Falling
-if (!place_meeting(x,y+1,oWall)) && (key_jump)	
+if (!place_meeting(x,y+1,oWall))
 {
 	sprite_index = sPlayerAir;
 	image_speed= 0;	
 	if (sign(vsp) > 0) image_index = 0; else image_index = 1; /// selects frame of sPlayerAir sprite
 }
+else
+{
+	image_speed= 1;
+	if	(hsp==0)
+	{
+		sprite_index = sPlayer;
+	}
+	else
+	{
+		sprite_index = sPlayerRun;	
+	}
+}
+
+if (hsp !=0) image_xscale = sign(hsp);
