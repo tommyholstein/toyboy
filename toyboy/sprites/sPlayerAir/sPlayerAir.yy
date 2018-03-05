@@ -43,10 +43,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "height": 66,
 =======
     "height": 155,
 >>>>>>> 28ee49d493c8ad4ecdf767dd09031fc3b29aeded
+=======
+    "height": 265,
+>>>>>>> parent of 28ee49d... Jump and Fall Sprites
 =======
     "height": 265,
 >>>>>>> parent of 28ee49d... Jump and Fall Sprites
@@ -79,6 +83,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "width": 50,
     "xorig": 25,
     "yorig": 33
@@ -87,6 +92,11 @@
     "xorig": 65,
     "yorig": 61
 >>>>>>> 28ee49d493c8ad4ecdf767dd09031fc3b29aeded
+=======
+    "width": 200,
+    "xorig": 100,
+    "yorig": 132
+>>>>>>> parent of 28ee49d... Jump and Fall Sprites
 =======
     "width": 200,
     "xorig": 100,
