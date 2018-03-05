@@ -6,12 +6,12 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 52,
-    "bbox_left": 10,
-    "bbox_right": 23,
-    "bbox_top": 13,
+    "bbox_bottom": 231,
+    "bbox_left": 17,
+    "bbox_right": 158,
+    "bbox_top": 19,
     "bboxmode": 2,
-    "colkind": 1,
+    "colkind": 3,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
@@ -44,6 +44,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "height": 66,
 =======
     "height": 155,
@@ -57,6 +58,9 @@
 =======
     "height": 265,
 >>>>>>> parent of 28ee49d... Jump and Fall Sprites
+=======
+    "height": 265,
+>>>>>>> parent of 58d936d... player resize
     "layers": [
         {
             "id": "f038515c-e2bd-4086-a154-5a79b40f195c",
@@ -84,6 +88,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "width": 50,
     "xorig": 25,
     "yorig": 33
@@ -107,4 +112,9 @@
     "xorig": 100,
     "yorig": 132
 >>>>>>> parent of 28ee49d... Jump and Fall Sprites
+=======
+    "width": 200,
+    "xorig": 100,
+    "yorig": 132
+>>>>>>> parent of 58d936d... player resize
 }
