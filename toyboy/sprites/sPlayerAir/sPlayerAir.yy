@@ -45,6 +45,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "height": 66,
 =======
     "height": 155,
@@ -61,6 +62,9 @@
 =======
     "height": 265,
 >>>>>>> parent of 58d936d... player resize
+=======
+    "height": 265,
+>>>>>>> parent of 28ee49d... Jump and Fall Sprites
     "layers": [
         {
             "id": "f038515c-e2bd-4086-a154-5a79b40f195c",
@@ -84,6 +88,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,4 +122,9 @@
     "xorig": 100,
     "yorig": 132
 >>>>>>> parent of 58d936d... player resize
+=======
+    "width": 200,
+    "xorig": 100,
+    "yorig": 132
+>>>>>>> parent of 28ee49d... Jump and Fall Sprites
 }
