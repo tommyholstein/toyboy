@@ -1,3 +1,5 @@
+var bbox_side;
+
 /// Player Input
 key_left = keyboard_check (vk_left);
 key_right = keyboard_check (vk_right);
@@ -8,12 +10,31 @@ var move = key_right - key_left;
 hsp = move*walksp;
 vsp = vsp + grv;
 
+
+// Grappling Code
+// CHecking hook
+if (mouse_check_button_pressed(mb_left)) //throw YOYO
+{
+	mx = mouse_x;
+	my = mouse_y;
+	if(place_meeting(mx,my,oHook)){
+		active = true;
+	}
+}
+
+if (mouse_check_button_released (mb_left)) //release YOYO
+{
+	active = false;
+}
+
+
 ///Jump
-if (place_meeting(x,y+1,oWall)) && (key_jump)	
+if (place_meeting(x,y+1,oWall)) && (key_jump) 	
 {
 	vsp = -7	/// number is the jump height	
 }	
 
+// HIT TESTING ground
 /// Horazontal Hit Test
 if (place_meeting(x+hsp,y,oWall))
 {
@@ -26,7 +47,7 @@ if (place_meeting(x+hsp,y,oWall))
 x = x + hsp; 
 
 /// Vertical Hit Test
-if (place_meeting(x,y+vsp,oWall))
+if (place_meeting(x,y+vsp,oWall)) 
 {
 	while(!place_meeting(x,y+sign(vsp),oWall))
 	{
