@@ -4,6 +4,8 @@ var bbox_side;
 key_left = keyboard_check (vk_left);
 key_right = keyboard_check (vk_right);
 key_jump = keyboard_check_pressed (vk_space);
+key_up = keyboard_check (vk_up);
+key_down = keyboard_check (vk_down);
 
 /// Calculate Movement
 var move = key_right - key_left;
@@ -12,7 +14,6 @@ vsp = vsp + grv;
 
 
 // Grappling Code
-// CHecking hook
 if (mouse_check_button_pressed(mb_left)) //throw YOYO
 {
 	mx = mouse_x;
@@ -22,11 +23,43 @@ if (mouse_check_button_pressed(mb_left)) //throw YOYO
 	}
 }
 
+if(active)
+{
+	grv = 0.1;
+	x += (mx - x) * 0.2;
+	y += (my - y) * 0.2;
+}
+
 if (mouse_check_button_released (mb_left)) //release YOYO
 {
 	active = false;
+	grv = .25;
 }
 
+//Ladder
+if (key_up  || key_down)
+{
+	if(place_meeting(x,y,oLadder)) ladder = true;
+}
+
+if(ladder)
+{
+	vsp = 0;
+	if(key_up)
+	{
+		vsp = -2;
+		image_speed= 1;
+		sprite_index = sPlayerClimb;
+	}
+	if(key_down)
+	{
+		vsp = 2;
+		image_speed= 1;
+		sprite_index = sPlayerClimb;
+	}
+	if (!place_meeting(x,y,oLadder)) ladder = false;
+	if (key_jump) ladder = false;
+}
 
 ///Jump
 if (place_meeting(x,y+1,oWall)) && (key_jump) 	
@@ -60,6 +93,8 @@ y = y + vsp;
 
 /// Animation and Sprite Triggers
 	/// Jumping and Falling
+if (! ladder){	//am i climbing a ladder?
+
 if (!place_meeting(x,y+1,oWall))
 {
 	sprite_index = sPlayerA;
@@ -78,5 +113,10 @@ else
 		sprite_index = sPlayerRun;	
 	}
 }
+}//end lader check
 
-if (hsp !=0) image_xscale = sign(hsp);
+if (hsp !=0) image_xscale = sign(hsp); //flips palyer run for left nad right
+
+if ((vsp =0) && (ladder)) image_speed= 0;  //if on ladder but not climbing stop animation
+
+

@@ -5,6 +5,8 @@ vsp = 0; /// vertical speed
 grv = .25; /// Gravity
 walksp = 5; /// Walking speed
 
+ladder = false
+
 // Grappling Variables
 mx = x;		//hook x coordinate
 my = y;		//hook y coordinate

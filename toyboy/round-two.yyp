@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "2b3d1334-82a8-49a6-9c81-c1bd92cf6bb4",
+            "Value": {
+                "id": "d33b673e-c0f5-455d-8317-9dca03998fc5",
+                "resourcePath": "sprites\\sBWall\\sBWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e6163cf-ce6d-4730-93d8-963d3624712b",
             "Value": {
                 "id": "c8cabf9a-c9bc-4555-8b6b-6694f73e3137",
@@ -143,6 +151,14 @@
             }
         },
         {
+            "Key": "6256e53a-8b8e-411a-b3b7-ae66665dc7f3",
+            "Value": {
+                "id": "95d379fa-6b9c-432b-ae81-41a86e751d79",
+                "resourcePath": "sprites\\sLadder\\sLadder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63fb4435-37e8-4046-b4a6-34cce88f78b0",
             "Value": {
                 "id": "4f8d0bc7-0c93-43b0-92c1-caa0ca01a5c5",
@@ -172,6 +188,14 @@
                 "id": "475453b8-0c44-42e8-90d2-05a0966f03cd",
                 "resourcePath": "tilesets\\tCollision\\tCollision.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "8068853e-8e66-466e-96d8-e900949405ed",
+            "Value": {
+                "id": "e345eb0a-10db-460c-951d-4a152fd447d7",
+                "resourcePath": "sprites\\sPlayerClimb\\sPlayerClimb.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -212,6 +236,14 @@
                 "id": "365ba516-3ee0-42d4-9fd9-f1795484044d",
                 "resourcePath": "views\\8d2f7cf4-1b5e-45ba-994b-9a1dc78aa85f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9499dc93-c10e-474e-99ba-7b1f1b5dde52",
+            "Value": {
+                "id": "0a910e08-a073-449a-a69b-ade4fca38f5d",
+                "resourcePath": "objects\\oLadder\\oLadder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -284,6 +316,14 @@
                 "id": "aef7ef65-41cf-495c-9b4d-098ef118cd30",
                 "resourcePath": "sprites\\sTileset\\sTileset.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e506cc8c-9458-4404-a97d-99e6b78842c6",
+            "Value": {
+                "id": "8656aa2b-b04e-4a2a-a792-bed9d64547a4",
+                "resourcePath": "objects\\oBWall\\oBWall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
