@@ -13,7 +13,11 @@ hsp = move*walksp;
 vsp = vsp + grv;
 
 
-// Grappling Code
+// Yoyo Code
+if(place_meeting(x,y,oYoyo)) yoyo = true; //walk on yoy to aquire
+
+if(yoyo)
+{
 if (mouse_check_button_pressed(mb_left)) //throw YOYO
 {
 	mx = mouse_x;
@@ -35,6 +39,8 @@ if (mouse_check_button_released (mb_left)) //release YOYO
 	active = false;
 	grv = .25;
 }
+}
+
 
 //Ladder
 if (key_up  || key_down)

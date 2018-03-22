@@ -5,6 +5,10 @@ vsp = 0; /// vertical speed
 grv = .25; /// Gravity
 walksp = 5; /// Walking speed
 
+//ITEMS
+boppers = false
+yoyo = false;
+
 ladder = false
 
 // Grappling Variables
