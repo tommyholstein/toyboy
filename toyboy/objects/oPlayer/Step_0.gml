@@ -17,12 +17,12 @@ vsp = vsp + grv;
 if(place_meeting(x,y,oYoyo)) yoyo = true; //walk on yoy to aquire
 
 if(yoyo)
-{
+{ 
 if (mouse_check_button_pressed(mb_left)) //throw YOYO
 {
 	mx = mouse_x;
 	my = mouse_y;
-	if(place_meeting(mx,my,oHook)){
+	if (place_meeting(mx,my,oHook)){
 		active = true;
 	}
 }
