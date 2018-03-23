@@ -1,11 +1,11 @@
 var bbox_side;
 
 /// Player Input
-key_left = keyboard_check (vk_left);
-key_right = keyboard_check (vk_right);
+key_left = keyboard_check (vk_left) || keyboard_check(ord("A"));
+key_right = keyboard_check (vk_right)|| keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed (vk_space);
-key_up = keyboard_check (vk_up);
-key_down = keyboard_check (vk_down);
+key_up = keyboard_check (vk_up) || keyboard_check(ord("W"));
+key_down = keyboard_check (vk_down) || keyboard_check(ord("S"));
 
 /// Calculate Movement
 var move = key_right - key_left;
@@ -32,6 +32,8 @@ if(active)
 	grv = 0.1;
 	x += (mx - x) * 0.2;
 	y += (my - y) * 0.2;
+	if(keyboard_check (vk_right)){ x= x +15;}
+	if(keyboard_check (vk_left)){ x= x -15;}
 }
 
 if (mouse_check_button_released (mb_left)) //release YOYO
