@@ -1,5 +1,7 @@
 var bbox_side;
 
+
+
 /// Player Input
 key_left = keyboard_check (vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check (vk_right)|| keyboard_check(ord("D"));
@@ -9,14 +11,14 @@ key_down = keyboard_check (vk_down) || keyboard_check(ord("S"));
 
 /// Calculate Movement
 var move = key_right - key_left;
-hsp = move*walksp;
+global.hsp = move*walksp;
 vsp = vsp + grv;
 
 
 // Yoyo Code
 if(place_meeting(x,y,oYoyo)) global.yoyo = true; //walk on yoyo to aquire
 
-if(global.yoyo)
+if(global.yoyo == true) && (global.yoyoAquired == true)
 { 
 	if (global.yoyo == true) && (mouse_check_button_pressed(mb_left)) //throw YOYO
 		{
@@ -56,9 +58,11 @@ if(global.yoyo)
 if(place_meeting(x,y,oBoppers)) 
 {
 	global.yoyo = false; //turns off yoyo
-	boppers = true; //walk on boppers to aquire
+	global.yoyoAquired = false
+	global.boppers = true; //walk on boppers to aquire
 	global.bothaquired = true; //shows that both items have been aquired
 }
+
 
 
 
@@ -95,15 +99,15 @@ if (place_meeting(x,y+1,oWall)) && (key_jump)
 
 // HIT TESTING ground
 /// Horazontal Hit Test
-if (place_meeting(x+hsp,y,oWall))
+if (place_meeting(x+global.hsp,y,oWall))
 {
-	while(!place_meeting(x+sign(hsp),y,oWall))
+	while(!place_meeting(x+sign(global.hsp),y,oWall))
 	{
-		x = x + sign(hsp);	
+		x = x + sign(global.hsp);	
 	}
-	hsp=0;
+	global.hsp=0;
 }
-x = x + hsp; 
+x = x + global.hsp; 
 
 /// Vertical Hit Test
 if (place_meeting(x,y+vsp,oWall)) 
@@ -130,12 +134,12 @@ if (!place_meeting(x,y+1,oWall))
 else
 	{
 		image_speed= 1;
-		if	(hsp==0) && (keyboard_check("vk_nokey"))
+		if	(global.hsp==0) && (keyboard_check("vk_nokey"))
 			{
 				sprite_index = sPlayer;
 				
 			}
-		else if (hsp == 0) && (global.yoyo == false) && (boppers == true) && (keyboard_check(ord("E")))
+		else if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E")))
 					{
 						sprite_index = sBopperCharge;
 						if (image_speed > 0)
@@ -145,16 +149,17 @@ else
 										image_speed = 0;
 										global.bopperCharged = true;
 										instance_create_depth(x,y,10,oHitbox);
+										
 									}
 									
 							 }
-						
 					}
-		else if (hsp > 0) && (global.yoyo == false) && (boppers == false)
+		else if (global.hsp > 0) && ((global.yoyo == false) || (global.yoyo == true)) && (global.boppers == false)
 			{
 				sprite_index = sPlayerRun;	
 			}
-		else if (global.yoyo == false) && (boppers == true)
+			
+		else if (global.hsp > 0) && (global.bothaquired == true) && (global.boppers == true)
 			{
 				sprite_index = sBopperWalkRight;
 				
@@ -162,6 +167,6 @@ else
 	}
 }//end lader check
 
-if (hsp !=0) image_xscale = sign(hsp); //flips palyer run for left nad right
+if (global.hsp !=0) image_xscale = sign(global.hsp); //flips palyer run for left nad right
 
 if ((vsp =0) && (ladder)) image_speed= 0;  //if on ladder but not climbing stop animation

@@ -9,6 +9,8 @@ if(global.yoyoAquired) && (global.yoyo == true)
 	{
 		Ymx = mouse_x;
 		Ymy = mouse_y;
+		
+		audio_play_sound(rope,0,0);
 	}
 	if (mouse_check_button(mb_left)) //throw YOYO
 	{

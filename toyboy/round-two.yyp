@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "c4eb7f18-83c1-42ee-8f4d-4001038a3b3a",
+            "Value": {
+                "id": "4aa11344-c9bc-48bd-8696-66535c73ba92",
+                "resourcePath": "sounds\\rope\\rope.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ca5b69f6-da99-4513-8e27-c0943f05785d",
             "Value": {
                 "id": "19be497c-7fd7-4c8f-b3a2-dd0045c2d7ce",
@@ -412,6 +420,14 @@
                 "id": "ed8fbe51-eeae-4f1b-9fdb-8d17f319aa1b",
                 "resourcePath": "sprites\\sBopperWalkRight\\sBopperWalkRight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d79ddc1d-7629-4ff1-bfd2-0af2ecb2a7ea",
+            "Value": {
+                "id": "6269b63c-0fbf-48f8-b63a-b91572541a6d",
+                "resourcePath": "sounds\\falling_brick\\falling_brick.yy",
+                "resourceType": "GMSound"
             }
         },
         {
