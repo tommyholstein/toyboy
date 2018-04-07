@@ -118,7 +118,40 @@ else
 	}
 	else
 	{
+<<<<<<< HEAD
 		sprite_index = sPlayerRun;	
+=======
+		image_speed= 1;
+		if	(hsp==0) && (keyboard_check("vk_nokey"))
+			{
+				sprite_index = sPlayer;
+				
+			}
+		else if (hsp == 0) && (global.yoyo == false) && (boppers == true) && (keyboard_check(ord("E")))
+					{
+						sprite_index = sBopperCharge;
+						if (image_speed > 0)
+							 {
+							 if (image_index > image_number - 1)
+									{
+										image_speed = 0;
+										global.bopperCharged = true;
+										instance_create_depth(x,y,10,oHitbox);
+									}
+									
+							 }
+						
+					}
+		else if (hsp > 0) && (global.yoyo == false) && (boppers == false)
+			{
+				sprite_index = sPlayerRun;	
+			}
+		else if (global.yoyo == false) && (boppers == true)
+			{
+				sprite_index = sBopperWalkRight;
+				
+			}
+>>>>>>> parent of 9606767... Revert "Wall Destroys When Hit"
 	}
 }
 }//end lader check

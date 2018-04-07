@@ -1,37 +1,33 @@
 {
-    "id": "e506cc8c-9458-4404-a97d-99e6b78842c6",
+    "id": "b42501e8-0cbb-49f6-b97c-4f57538fa433",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBWall",
+    "name": "oHitbox",
     "eventList": [
-<<<<<<< HEAD
-        
-=======
         {
-            "id": "8c459b6c-1da3-41b7-86ab-b09a62420768",
+            "id": "091a2b98-615b-4889-adc0-192180d4d82e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "e506cc8c-9458-4404-a97d-99e6b78842c6"
+            "enumb": 77,
+            "eventtype": 8,
+            "m_owner": "b42501e8-0cbb-49f6-b97c-4f57538fa433"
         },
         {
-            "id": "0b96d9a8-0cf5-414c-b897-abcfaea2a5ee",
+            "id": "f6ec4d87-2f5f-49a6-a977-03e7fe680fd6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "e506cc8c-9458-4404-a97d-99e6b78842c6"
+            "m_owner": "b42501e8-0cbb-49f6-b97c-4f57538fa433"
         }
->>>>>>> parent of 9606767... Revert "Wall Destroys When Hit"
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "12498d34-cfad-4b34-a069-2802ae8da2f9",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -47,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "2b3d1334-82a8-49a6-9c81-c1bd92cf6bb4",
+    "spriteId": "5e64e59f-e1c3-4975-9e8a-88c4f9eb8f1a",
     "visible": true
 }
