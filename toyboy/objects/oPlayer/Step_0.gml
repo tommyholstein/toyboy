@@ -138,14 +138,12 @@ else
 		else if (hsp == 0) && (global.yoyo == false) && (boppers == true) && (keyboard_check(ord("E")))
 					{
 						sprite_index = sBopperCharge;
-						if (image_speed > 0)
+						if image_speed > 0
 							 {
 							 if (image_index > image_number - 1)
-									{
-										image_speed = 0;
-										global.bopperCharged = true;
-										instance_create_depth(x,y,10,oHitbox);
-									}
+									image_speed = 0;
+									if (image_index == 14) global.bopperCharged = true;
+									
 									
 							 }
 						
