@@ -13,6 +13,7 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "b42501e8-0cbb-49f6-b97c-4f57538fa433"
+<<<<<<< HEAD
         },
         {
             "id": "a5fa135c-ccef-4455-b3f8-9d12b94ef580",
@@ -33,6 +34,8 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "b42501e8-0cbb-49f6-b97c-4f57538fa433"
+=======
+>>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
