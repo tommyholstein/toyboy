@@ -14,52 +14,34 @@ vsp = vsp + grv;
 
 
 // Yoyo Code
-if(place_meeting(x,y,oYoyo)) global.yoyo = true; //walk on yoyo to aquire
+if(place_meeting(x,y,oYoyo)) yoyo = true; //walk on yoy to aquire
 
-if(global.yoyo)
+if(yoyo)
 { 
-	if (global.yoyo == true) && (mouse_check_button_pressed(mb_left)) //throw YOYO
-		{
-			mx = mouse_x;
-			my = mouse_y;
-			if (place_meeting(mx,my,oHook))
-				{
-					active = true;
-				}
-		}
-
-	if(active)
-		{
-			grv = 0.1;
-			x += (mx - x) * 0.2;
-			y += (my - y) * 0.2;
-			if(keyboard_check (vk_right))
-				{ 
-					x= x +15;
-				}
-			if(keyboard_check (vk_left))
-				{ 
-					x= x -15;
-				}
-		}
-
-	if (mouse_check_button_released (mb_left)) //release YOYO
-		{
-			active = false;
-			grv = .25;
-		}
-}
-
-
-
-//Boppers Code
-if(place_meeting(x,y,oBoppers)) 
+if (mouse_check_button_pressed(mb_left)) //throw YOYO
 {
-	global.yoyo = false; //turns off yoyo
-	boppers = true; //walk on boppers to aquire
-	global.bothaquired = true; //shows that both items have been aquired
+	mx = mouse_x;
+	my = mouse_y;
+	if (place_meeting(mx,my,oHook)){
+		active = true;
+	}
 }
 
+if(active)
+{
+	grv = 0.1;
+	x += (mx - x) * 0.2;
+	y += (my - y) * 0.2;
+	if(keyboard_check (vk_right)){ x= x +15;}
+	if(keyboard_check (vk_left)){ x= x -15;}
+}
+
+if (mouse_check_button_released (mb_left)) //release YOYO
+{
+	active = false;
+	grv = .25;
+}
+}
 
 
 //Ladder
@@ -122,44 +104,27 @@ y = y + vsp;
 if (! ladder){	//am i climbing a ladder?
 
 if (!place_meeting(x,y+1,oWall))
-	{
-		sprite_index = sPlayerA;
-		image_speed= 0;	
-		if (sign(vsp) > 0) image_index = 1; else image_index = 0; /// selects frame of sPlayerAir sprite
-	}
+{
+	sprite_index = sPlayerA;
+	image_speed= 0;	
+	if (sign(vsp) > 0) image_index = 1; else image_index = 0; /// selects frame of sPlayerAir sprite
+}
 else
+{
+	image_speed= 1;
+	if	(hsp==0)
 	{
-		image_speed= 1;
-		if	(hsp==0) && (keyboard_check("vk_nokey"))
-			{
-				sprite_index = sPlayer;
-				
-			}
-		else if (hsp == 0) && (global.yoyo == false) && (boppers == true) && (keyboard_check(ord("E")))
-					{
-						sprite_index = sBopperCharge;
-						if image_speed > 0
-							 {
-							 if (image_index > image_number - 1)
-									image_speed = 0;
-									if (image_index == 14) global.bopperCharged = true;
-									
-									
-							 }
-						
-					}
-		else if (hsp > 0) && (global.yoyo == false) && (boppers == false)
-			{
-				sprite_index = sPlayerRun;	
-			}
-		else if (global.yoyo == false) && (boppers == true)
-			{
-				sprite_index = sBopperWalkRight;
-				
-			}
+		sprite_index = sPlayer;
 	}
+	else
+	{
+		sprite_index = sPlayerRun;	
+	}
+}
 }//end lader check
 
 if (hsp !=0) image_xscale = sign(hsp); //flips palyer run for left nad right
 
 if ((vsp =0) && (ladder)) image_speed= 0;  //if on ladder but not climbing stop animation
+
+

@@ -6,4 +6,4 @@ Ymy = y;
 
 active = false;
 thrownOut = false;
-global.yoyoAquired = false;
+yoyoAquired = false;

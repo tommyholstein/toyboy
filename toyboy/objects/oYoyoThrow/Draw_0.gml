@@ -3,7 +3,7 @@
 
 draw_self();
 
-if(thrownOut && !active) && (global.yoyo == true)
+if(thrownOut && !active)
 {
 	draw_line(x,y-5,oPlayer.x,oPlayer.y);
 }
