@@ -7,7 +7,9 @@ walksp = 5; /// Walking speed
 
 //ITEMS
 boppers = false
-yoyo = false;
+global.yoyo = false;
+
+global.bothaquired = false;
 
 ladder = false
 
@@ -15,3 +17,6 @@ ladder = false
 mx = x;		//hook x coordinate
 my = y;		//hook y coordinate
 active = false;		//am i grappling?
+
+
+global.bopperCharged = false;

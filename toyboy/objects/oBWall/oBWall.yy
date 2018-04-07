@@ -5,8 +5,11 @@
     "name": "oBWall",
     "eventList": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
+=======
+>>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
         {
             "id": "8c459b6c-1da3-41b7-86ab-b09a62420768",
             "modelName": "GMEvent",
@@ -16,6 +19,7 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "e506cc8c-9458-4404-a97d-99e6b78842c6"
+<<<<<<< HEAD
         },
         {
             "id": "0b96d9a8-0cf5-414c-b897-abcfaea2a5ee",
@@ -28,6 +32,9 @@
             "m_owner": "e506cc8c-9458-4404-a97d-99e6b78842c6"
         }
 >>>>>>> parent of 9606767... Revert "Wall Destroys When Hit"
+=======
+        }
+>>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
