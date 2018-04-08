@@ -18,7 +18,7 @@ vsp = vsp + grv;
 // Yoyo Code
 if(place_meeting(x,y,oYoyo)) global.yoyo = true; //walk on yoyo to aquire
 
-if(global.yoyo == true) && (global.yoyoAquired == true)
+if(global.yoyo == true) && (global.yoyoAquired == true) //If yoyo is active
 { 
 	if (global.yoyo == true) && (mouse_check_button_pressed(mb_left)) //throw YOYO
 		{
@@ -55,10 +55,10 @@ if(global.yoyo == true) && (global.yoyoAquired == true)
 
 
 //Boppers Code
-if(place_meeting(x,y,oBoppers)) 
+if(place_meeting(x,y,oBoppers)) //if you walk over yoyo
 {
 	global.yoyo = false; //turns off yoyo
-	global.yoyoAquired = false
+	global.yoyoAquired = false //also turns off yoyo
 	global.boppers = true; //walk on boppers to aquire
 	global.bothaquired = true; //shows that both items have been aquired
 }
@@ -134,12 +134,12 @@ if (!place_meeting(x,y+1,oWall))
 else
 	{
 		image_speed= 1;
-		if	(global.hsp==0) && (keyboard_check("vk_nokey"))
+		if	(global.hsp==0) && (keyboard_check("vk_nokey")) //if not moving AND a key is not being pressed
 			{
 				sprite_index = sPlayer;
 				
 			}
-		else if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E")))
+		if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E"))) //if not moving, yoyo is inactive, boppers are active, AND pressing E...
 					{
 						sprite_index = sBopperCharge;
 						if (image_speed > 0)
@@ -148,18 +148,18 @@ else
 									{
 										image_speed = 0;
 										global.bopperCharged = true;
-										instance_create_depth(x,y,10,oHitbox);
+										instance_create_depth(x,y,10,oHitbox); //Creates a "hitbox" only while the last frame of the "bopper charge" animation is active
 										
 									}
 									
 							 }
 					}
-		else if (global.hsp > 0) && ((global.yoyo == false) || (global.yoyo == true)) && (global.boppers == false)
+		if (global.hsp != 0)  && (global.boppers == false) //if moving, AND boppers are false
 			{
 				sprite_index = sPlayerRun;	
 			}
 			
-		else if (global.hsp > 0) && (global.bothaquired == true) && (global.boppers == true)
+		if (global.hsp != 0) && (global.bothaquired == true) && (global.boppers == true) //otherwise, if moving, both have been aquired, AND boppers are active...
 			{
 				sprite_index = sBopperWalkRight;
 				
