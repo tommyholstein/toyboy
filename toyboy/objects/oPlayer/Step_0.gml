@@ -121,17 +121,25 @@ if (place_meeting(x,y+vsp,oWall))
 y = y + vsp; 
 
 
+
+	
 /// Animation and Sprite Triggers
 	/// Jumping and Falling
+	
+	
+if ((vsp == 0) && (global.hsp == 0))
+	sprite_index = sPlayer; //Stops animation if not moving
+	
+	
 if (! ladder){	//am i climbing a ladder?
 
 if (!place_meeting(x,y+1,oWall))
 	{
 		sprite_index = sPlayerA;
 		image_speed= 0;	
-		if (sign(vsp) > 0) image_index = 1; else image_index = 0; /// selects frame of sPlayerAir sprite
+		if (sign(vsp) > 0) image_index = 1; else if (sign(vsp) < 0) image_index = 0; /// selects frame of sPlayerAir sprite
 	}
-else
+else if (place_meeting(x,y+1,oWall))
 	{
 		image_speed= 1;
 		if	(global.hsp==0) && (keyboard_check("vk_nokey")) //if not moving AND a key is not being pressed
