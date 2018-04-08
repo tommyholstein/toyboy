@@ -133,12 +133,6 @@ if (!place_meeting(x,y+1,oWall))
 	}
 else
 	{
-<<<<<<< HEAD
-<<<<<<< HEAD
-		sprite_index = sPlayerRun;	
-=======
-=======
->>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
 		image_speed= 1;
 		if	(global.hsp==0) && (keyboard_check("vk_nokey"))
 			{
@@ -148,7 +142,6 @@ else
 		else if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E")))
 					{
 						sprite_index = sBopperCharge;
-<<<<<<< HEAD
 						if (image_speed > 0)
 							 {
 							 if (image_index > image_number - 1)
@@ -158,14 +151,6 @@ else
 										instance_create_depth(x,y,10,oHitbox);
 										
 									}
-=======
-						if image_speed > 0
-							 {
-							 if (image_index > image_number - 1)
-									image_speed = 0;
-									if (image_index == 14) global.bopperCharged = true;
-									
->>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
 									
 							 }
 					}
@@ -179,10 +164,6 @@ else
 				sprite_index = sBopperWalkRight;
 				
 			}
-<<<<<<< HEAD
->>>>>>> parent of 9606767... Revert "Wall Destroys When Hit"
-=======
->>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
 	}
 }//end lader check
 

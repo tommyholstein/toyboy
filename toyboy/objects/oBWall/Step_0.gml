@@ -1,5 +1,4 @@
 image_speed = 0;
-<<<<<<< HEAD
 if (global.wallHit == true)
 	{
 		image_speed = 1;
@@ -8,13 +7,4 @@ if (global.wallHit == true)
 		
 	}
 	
-<<<<<<< HEAD
 	
-=======
-=======
-if (global.bopperCharged == true)
-	{
-		image_speed = 1;
-	}
->>>>>>> parent of d9d4c5d... Revert "Bopper Charge Animation"
->>>>>>> 33d34d237a90729c741c636580c16e258516553e
