@@ -8,6 +8,7 @@ key_right = keyboard_check (vk_right)|| keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed (vk_space);
 key_up = keyboard_check (vk_up) || keyboard_check(ord("W"));
 key_down = keyboard_check (vk_down) || keyboard_check(ord("S"));
+key_break = keyboard_check(ord("E"));
 
 /// Calculate Movement
 var move = key_right - key_left;
@@ -123,6 +124,27 @@ y = y + vsp;
 
 /// Animation and Sprite Triggers
 	/// Jumping and Falling
+	
+if (global.hsp == 0) && (vsp == 0) 
+	{
+		if (global.boppers == true) && (key_break)
+			{sprite_index = sBopperCharge;
+						if (image_speed > 0)
+							 {
+							 if (image_index > image_number - 1)
+									{
+										image_speed = 0;
+										global.bopperCharged = true;
+										instance_create_depth(x,y,10,oHitbox); //Creates a "hitbox" only while the last frame of the "bopper charge" animation is active
+										image_speed = 0;
+								}
+									
+							 }
+			}
+		else if (!keyboard_check(ord("E")))
+		sprite_index = sPlayer;
+		
+	}
 if (! ladder){	//am i climbing a ladder?
 
 if (!place_meeting(x,y+1,oWall))
@@ -139,20 +161,9 @@ else
 				sprite_index = sPlayer;
 				
 			}
-		if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E"))) //if not moving, yoyo is inactive, boppers are active, AND pressing E...
+		//if (global.hsp == 0) && (global.yoyo == false) && (global.boppers == true) && (keyboard_check(ord("E"))) //if not moving, yoyo is inactive, boppers are active, AND pressing E...
 					{
-						sprite_index = sBopperCharge;
-						if (image_speed > 0)
-							 {
-							 if (image_index > image_number - 1)
-									{
-										image_speed = 0;
-										global.bopperCharged = true;
-										instance_create_depth(x,y,10,oHitbox); //Creates a "hitbox" only while the last frame of the "bopper charge" animation is active
-										
-									}
-									
-							 }
+						
 					}
 		if (global.hsp != 0)  && (global.boppers == false) //if moving, AND boppers are false
 			{
