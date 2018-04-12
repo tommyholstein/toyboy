@@ -359,11 +359,11 @@
             }
         },
         {
-            "Key": "9b8fc02f-94fd-4f9d-b608-9b13f53e7079",
+            "Key": "9ecf7320-67b8-4107-b42f-856cced523c6",
             "Value": {
-                "id": "9d43c804-90a2-485c-a6c5-0e609f330885",
-                "resourcePath": "objects\\oTitleScreen\\oTitleScreen.yy",
-                "resourceType": "GMObject"
+                "id": "a8926c24-1e8f-4ef7-9c86-204ef2b668d7",
+                "resourcePath": "views\\9ecf7320-67b8-4107-b42f-856cced523c6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -396,14 +396,6 @@
                 "id": "1d4d3442-eaa9-4b85-93b7-9553d5218822",
                 "resourcePath": "views\\b6d0b0be-77b6-45ca-becb-bae4a73f14d1.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "bb1b16d7-5991-47ef-8921-f9ca63901824",
-            "Value": {
-                "id": "7a237ae0-e359-4c99-acc2-a6196d0dc1d0",
-                "resourcePath": "rooms\\room_00\\room_00.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -451,14 +443,6 @@
             "Value": {
                 "id": "ed8fbe51-eeae-4f1b-9fdb-8d17f319aa1b",
                 "resourcePath": "sprites\\sBopperWalkRight\\sBopperWalkRight.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d10a38ba-befc-4a19-b64b-2cf7f38dbd3b",
-            "Value": {
-                "id": "d4329a16-16c6-466f-a315-dd2d0ab6fb84",
-                "resourcePath": "sprites\\sTitleScreen\\sTitleScreen.yy",
                 "resourceType": "GMSprite"
             }
         },
