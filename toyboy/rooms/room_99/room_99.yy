@@ -1,6 +1,6 @@
 
 {
-    "name": "lvl3",
+    "name": "room_99",
     "id": "0ee6ef22-d1ae-4f63-8f74-1df845bd8b2e",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -43,7 +43,7 @@
             "id": "e566d500-a2bd-4487-b9a1-dd5077cfd488",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4294967295 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -62,7 +62,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "00000000-0000-0000-0000-000000000000",
+            "spriteId": "f12d6e58-4568-4699-bd6e-606a950cca86",
             "stretch": false,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
