@@ -8,6 +8,6 @@ if(place_meeting(x,y,oPlayer))
 		room_goto (lvl2);
 	}
 	if (room == lvl2)
-		room_goto (room_99);
+		room_goto (lvl1);
 }
 

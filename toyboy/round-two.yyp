@@ -42,7 +42,7 @@
             "Key": "0ee6ef22-d1ae-4f63-8f74-1df845bd8b2e",
             "Value": {
                 "id": "b3a6aa2d-298f-4360-ac39-f314b1686e14",
-                "resourcePath": "rooms\\room_99\\room_99.yy",
+                "resourcePath": "rooms\\lvl3\\lvl3.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -458,6 +458,14 @@
             }
         },
         {
+            "Key": "dabe46a4-705b-4bd0-9fff-8bcf7e4d63c6",
+            "Value": {
+                "id": "5a516cd1-7974-4166-9e4f-4107596dff8f",
+                "resourcePath": "sprites\\sCollision\\sCollision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "db9bd917-c4da-4779-b516-fff366a0e56f",
             "Value": {
                 "id": "aef7ef65-41cf-495c-9b4d-098ef118cd30",
@@ -495,14 +503,6 @@
                 "id": "d3d269dc-ae4e-4d51-a69f-7710cbbeb4a1",
                 "resourcePath": "views\\efe33e15-7a35-4414-8a6d-efb2c35f81b4.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f12d6e58-4568-4699-bd6e-606a950cca86",
-            "Value": {
-                "id": "c88bdaa5-88e7-45c5-b653-a77ddc291dfb",
-                "resourcePath": "sprites\\sEndScreen\\sEndScreen.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
