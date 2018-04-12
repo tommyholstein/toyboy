@@ -1,1 +1,0 @@
-if (global.wallHit == true) audio_play_sound(falling_brick,0,0);

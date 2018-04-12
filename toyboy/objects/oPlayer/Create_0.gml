@@ -22,4 +22,4 @@ active = false;		//am i grappling?
 global.wallHit = false;
 global.bopperCharged = false;
 
-
+global.triggerDestroy = false;

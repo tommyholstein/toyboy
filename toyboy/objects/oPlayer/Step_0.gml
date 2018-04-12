@@ -65,6 +65,8 @@ if(place_meeting(x,y,oBoppers)) //if you walk over yoyo
 }
 
 
+			
+			
 
 
 //Ladder
@@ -136,6 +138,7 @@ if (global.hsp == 0) && (vsp == 0)
 										image_speed = 0;
 										global.bopperCharged = true;
 										instance_create_depth(x,y,10,oHitbox); //Creates a "hitbox" only while the last frame of the "bopper charge" animation is active
+										
 										image_speed = 0;
 								}
 									
