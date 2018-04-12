@@ -1,4 +1,4 @@
-var bbox_side;
+
 
 
 
