@@ -15,4 +15,8 @@ if (global.bothaquired == true)
 		y = -100;
 		//puts the Boppers off screen so you don't collide with them again
 	}
+<<<<<<< HEAD
 	
+=======
+	
+>>>>>>> 40dd4f2590ad4648a02d0aac197f80f83a71fa15

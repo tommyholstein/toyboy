@@ -1,5 +1,7 @@
 var bbox_side;
 
+
+
 /// Player Input
 key_left = keyboard_check (vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check (vk_right)|| keyboard_check(ord("D"));
@@ -181,4 +183,8 @@ else
 
 if (global.hsp !=0) image_xscale = sign(global.hsp); //flips palyer run for left nad right
 
+<<<<<<< HEAD
 if ((vsp =0) && (ladder)) image_speed= 0;  //if on ladder but not climbing stop animation
+=======
+if ((vsp =0) && (ladder)) image_speed= 0;  //if on ladder but not climbing stop animation
+>>>>>>> 40dd4f2590ad4648a02d0aac197f80f83a71fa15

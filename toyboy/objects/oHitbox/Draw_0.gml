@@ -38,4 +38,7 @@ else if (!place_meeting(x,y,oBWall)) // otherwise, if it doesn't hit the breakab
 	
 instance_destroy();
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 40dd4f2590ad4648a02d0aac197f80f83a71fa15
