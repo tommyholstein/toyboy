@@ -4,7 +4,7 @@ if(place_meeting(x,y,oBWall)) // if the hitbox touches the breakable wall...
 		audio_play_sound(hit,0,0);
 		with (instance_nearest(x,y,oBWall)) //ONLY with the nearest instance
 			{
-			image_speed = 3;
+			image_speed = 2;
 			if (image_index > image_number - 1) 
 				{
 						instance_destroy();
@@ -23,7 +23,7 @@ else if (!place_meeting(x,y,oBWall)) // otherwise, if it doesn't hit the breakab
 				audio_play_sound(hit,0,0);
 					with (instance_nearest(x,y,oBWall)) //ONLY with the nearest instance
 					{
-						image_speed = 3;
+						image_speed = 2;
 						if (image_index > image_number - 1) 
 							{										
 								instance_destroy();
